@@ -6,7 +6,32 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.search-field{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  top: 50%;
+  left: 35%;
+}
+.search-field input{
+  width: 200px;
+  height: 30px;
+  padding-left:20px ;
+  font-size: 20px;
+}
+::-webkit-input-placeholder{
+  color: #282;
+  outline: none;
+}
+.suggesion{
+  cursor: pointer;
+  border: 1px solid black;
+}
+.suggesion:hover{
+  background-color: gray;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -27,6 +52,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
